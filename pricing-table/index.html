@@ -10,7 +10,8 @@
     />
     <style>
       body {
-        font-family: "Sono", sans-serif;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: #F5D2D2;
       }
         
 
@@ -27,13 +28,13 @@
       flex: 1;
       max-width: 400px;
       padding: 20px;
-      background-color: #f2f2f2;
+      background-color: rgba(255, 0, 43, 0.205);
       border-radius: 5px;
       text-align: center;
     }
 
     .plan-title {
-      font-size: 24px;
+      font-size: x-large;
       font-weight: bold;
       margin-bottom: 10px;
     }
@@ -45,9 +46,12 @@
     }
 
     .plan-features {
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
       list-style: none;
       padding: 0;
-      margin: 0;
+      margin-left: 20%;
     }
 
     .plan-features li {
@@ -56,13 +60,13 @@
 
     .plan-button {
       padding: 10px;
-      background-color: #ff6600;
+      background-color: #ff0000a9;
       color: #fff;
       border-radius: 5px;
       border: none;
     }
 
-    @media (max-width: 1250px min-width: 450px ) {
+    @media (max-width: 1250px), (min-width: 450px ) {
       .pricing-container {
         flex-direction: column;
         height: 100%;
